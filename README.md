@@ -4,8 +4,7 @@ Hunt for xRapid-like transactions out in the wild!
 
 If you'd like to express your support:
 
-![](img/xrptipbot.png) or `rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv 71673368`
-
+![](img/xrptipbot.png) or 'rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK 61854392'
 
 ## Install
 
@@ -73,7 +72,7 @@ Options:
 
 ## Creating visualization dashboards
 
-I'm [semi-regularly publishing](https://public.tableau.com/profile/hmatejx#!/vizhome/xRapid_search/xRapidtrafficTag) inter-exchange traffic data that follows the xRapid pattern.
+I'm [semi-regularly publishing](https://public.tableau.com/profile/xRapid_search/xRapidtrafficTag) inter-exchange traffic data that follows the xRapid pattern.
 
 If you would like to perform your own investigations, I have prepared a script called `GoogleCloud.sh` in the `dashboard` folder, which
 
@@ -130,7 +129,7 @@ Time                 Timestamp  LedgerIndex  Account                            
 2019-09-07 07:16:51  621163011  49870174     rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  32618391    45              113.616       Coins.ph->Bitstamp  Coins.ph  Bitstamp
 2019-09-07 07:10:30  621162630  49870074     rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  5           60000           9899.32       Bitstamp->Coins.ph  Bitstamp  Coins.ph
 2019-09-07 04:00:41  621151241  49867132     rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  48170618    45              5547.879955   Coins.ph->Bitstamp  Coins.ph  Bitstamp
-2019-09-07 03:36:30  621149790  49866761     rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK  71367866    12              420.300869    Bittrex->Bitso      Bittrex   Bitso
+2019-09-07 03:36:30  621149790  49866761     rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK  61854392    12              420.300869    Bittrex->Bitso      Bittrex   Bitso     rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK 61854392
 2019-09-07 03:36:20  621149780  49866758     rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  1208977612  60000           94651         Bitstamp->Bittrex   Bitstamp  Bittrex
 2019-09-07 03:26:50  621149210  49866612     rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  48170618    45              17757.569955  Coins.ph->Bitstamp  Coins.ph  Bitstamp
 2019-09-07 02:24:42  621145482  49865656     rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  130150      12              375           Bittrex->Coins.ph   Bittrex   Coins.ph
