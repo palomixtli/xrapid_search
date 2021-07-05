@@ -4,11 +4,11 @@ Hunt for xRapid-like transactions out in the wild!
 
 If you'd like to express your support:
 
-![](img/xrptipbot.png) or 'rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK 61854392,
+![] or 'rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK',tag, '61854392',
 
 ## Install
 
-Make sure you have installed the pip packages: `python-ripple-lib`, `bitso-py`, `docopt`, `numpy`, `matplotlib`, and [this modified version](https://github.com/hmatejx/bitstamp-python-client) or the [latest official version](https://github.com/kmadac/bitstamp-python-client) of `BitstampClient`.
+Make sure you have installed the pip packages: `python-ripple-lib`, `bitso-py`, `docopt`, `numpy`, `matplotlib`, and [this modified version]() or the [latest official version]() of `BitstampClient`.
 
 Alternatively, you can set up a project-specific virtual environment as shown below.
 
@@ -59,7 +59,7 @@ Usage:
   xrapid_search.py -v | --version
 
 Options:
-  -t time       Historical time period [default: 24].
+  -t time       Historical time period [default: ].
                 Valid settings for time are:
                   1 - 1 hour
                   24 - 24 hours
@@ -72,7 +72,7 @@ Options:
 
 ## Creating visualization dashboards
 
-I'm [semi-regularly publishing](https://public.tableau.com/profile/hmatejx#!/vizhome/xRapid_search/xRapidtrafficTag) inter-exchange traffic data that follows the xRapid pattern.
+I'm [semi-regularly publishing]() inter-exchange traffic data that follows the xRapid pattern.
 
 If you would like to perform your own investigations, I have prepared a script called `GoogleCloud.sh` in the `dashboard` folder, which
 
@@ -82,10 +82,10 @@ If you would like to perform your own investigations, I have prepared a script c
 
 If you want to use the script, you must create your own [Google Cloud Platform](https://console.cloud.google.com/) project and enable billing (don't worry, for such casual use it should be free). Go to BigQuery and create an empty dataset for your project, i.e. named `xRapid`.
 
-Next, you need an environment with `gsutil` [installed and configured](https://cloud.google.com/storage/docs/gsutil_install). 
+Next, you need an environment with `gsutil` [installed and configured](). 
 Also, you should create a bucket on Google Cloud Storage (instead of `us-east1` in the example below use your own favorite zone):
 ```
-gsutil mb -l us-east1 gs://my-awesome-bucket/
+gsutil mb -l us-east1 /
 ```
 
 
@@ -114,7 +114,7 @@ Waiting on bqjob_r1ac9d808abfe15c4_0000016d0bde915c_1 ... (5s) Current status: D
 
 3.) Downloading the results...
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Copying gs://hmatejx_sandbox/InterExchange.csv.gz...
+Copying ...
 - [1/1 files][  4.5 MiB/  4.5 MiB] 100% Done
 
 Operation completed over 1 objects/4.5 MiB.
@@ -129,7 +129,7 @@ Time                 Timestamp  LedgerIndex  Account                            
 2019-09-07 07:16:51  621163011  49870174     rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  32618391    45              113.616       Coins.ph->Bitstamp  Coins.ph  Bitstamp
 2019-09-07 07:10:30  621162630  49870074     rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  5           60000           9899.32       Bitstamp->Coins.ph  Bitstamp  Coins.ph
 2019-09-07 04:00:41  621151241  49867132     rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  48170618    45              5547.879955   Coins.ph->Bitstamp  Coins.ph  Bitstamp
-2019-09-07 03:36:30  621149790  49866761     rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK  61854392     12              420.300869    Bittrex->Bitso      Bittrex   Bitso
+2019-09-07 03:36:30  621149790  49866761     rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  rLSn6Z3T8uCxbcd1oxwfGQN1Fdn5CyGujK  61854392     61854392       420.300869    Bittrex->Bitso      Bitso     Bitso     61854392
 2019-09-07 03:36:20  621149780  49866758     rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  1208977612  60000           94651         Bitstamp->Bittrex   Bitstamp  Bittrex
 2019-09-07 03:26:50  621149210  49866612     rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  rDsbeomae4FXwgQTJp9Rs64Qg9vDiTCdBv  48170618    45              17757.569955  Coins.ph->Bitstamp  Coins.ph  Bitstamp
 2019-09-07 02:24:42  621145482  49865656     rPVMhWBsfF9iMXYj3aAzJVkPDTFNSyWdKy  rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA  130150      12              375           Bittrex->Coins.ph   Bittrex   Coins.ph
